@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Brenda Alves</h1>
+    <h2>Calculadora</h2>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#" onclick="toggleContact()">Contato</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+      <div class="contact-info" id="contactInfo">
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Instagram: @brendaalves</p>
+        <p>Email: brenda@example.com</p>
+      </div>
+    </div>
+
+    <div class="calculator">
+      <input type="text" id="display" readonly>
+      <div class="buttons">
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculate()">=</button>
+      </div>
+      <div class="result">
+        <span id="result-text"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
